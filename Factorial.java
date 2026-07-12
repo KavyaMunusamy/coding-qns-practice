@@ -4,12 +4,12 @@ class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int num = fact(n);
+        long num = fact(n);
         System.out.println("Factorial of " + n + " is : " + num);
     }
-    private static int fact(int n){
-        if(n<=2){
-            return n;
+    private static long fact(int n){
+        if(n==0 || n==1){
+            return 1;
         }
         return n*fact(n-1);
     }
